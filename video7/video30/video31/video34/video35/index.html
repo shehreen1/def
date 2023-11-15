@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>More on CSS Selectors</title>
+       <style>
+              .box1:first-child{
+                     background-color: red;
+                     
+              }
+              .box1:first-line{
+                     color:white;
+              }
+              .boxes *{
+                     color:blue;
+                     border:2px solid black;
+              }
+             .box:nth-child(even){
+              background-color: darkblue;
+             }
+             .boxes::before{
+              content:"Affirmation is the powerful key of success";
+              color: purple;
+             }
+             .boxes::after{
+              content:"Try try but don't cry";
+              color:green;
+             }
+            .boxes::first-letter{
+              color:peru;
+              font-size:45px;
+            }
+            input::placeholder{
+            color: rgb(0, 4, 128);
+            font-size:15px;
+            font-style: italic ;
+            }
+       </style>
+</head>
+<body>
+      <div class="boxes">
+         <div class="box1">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur sit cupiditate ullam cumque, sed quae dolorem veniam, atque illo natus ducimus neque aperiam eveniet repellat suscipit quas debitis optio ab assumenda? Quod consequatur, ratione tempore similique earum modi odio distinctio, laboriosam asperiores dolorem totam nisi voluptatibus magni, quasi dignissimos.</div>
+         <div class="box2">Hey I am a box</div>
+         <div class="box3">Hey I am a box</div>
+          </div><input type="text" placeholder="Type your name here">
+      </div>
+</body>
+</html>
