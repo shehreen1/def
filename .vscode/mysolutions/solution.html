@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <script>
+              //Q1 Write a program using prompt function to take input of age as a value from 
+              //the user and use alertto tell him if he can drive! 
+       var age=prompt("Write your age");
+       if (age>20) {
+              alert("you can drive");
+       } else {
+              alert("you cannot drive");
+       }
+       //Q2 In Q1 use confirm to ask the user if he wants  to see the prompt again.
+       if (confirm("wanna see prompt again")) {
+             alert("sure")
+       } else {
+              alert("not sure")
+       }
+       //Q3 In previous question, use console.error to log the error if the age entered is negative.
+       if (age<0) {
+              console.error("age is negative")
+       } else {
+              console.log("correct age")
+       }
+       //Q4Write a program to change the url to google.com(redirection) if user enters a  number  greater than 4.
+        var num=prompt("Enter the one digit number")
+        if (num>4) {
+               window.location.href = "https://www.google.com";
+        }
+        //Q5 Change the background of the page to yellow,red, or any other color based on user inpug through prompt.
+       var color=prompt("Enter color")
+       document.body.style.backgroundColor = color;
+        </script>
+</body>
+</html>
